@@ -2,14 +2,10 @@ package it.develhope.ifstatement;
 public class Start {
     public static void main(String args[])
     {
-        String mySurname = "Mazilu";
-
-        if (mySurname.contains("ni")) {
-            System.out.println("Your surname contains the sequence of letters: ni");
-        } else {
-            System.out.println("Your surname doesn't contain the sequence of letters: ni");
-        }
-
+        String surname = "Mazilu";
+        boolean containsNi = surname.contains("ni");
+        String result = containsNi ? "contains" : "doesn't contain";
+        System.out.println("My surname " + result + " letters 'ni'");
     }
 }
 
